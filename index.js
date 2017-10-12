@@ -13,3 +13,12 @@ function deepestChild(){
   }
   return child;
 }
+function increaseRankBy (n){
+  let lists = document.querySelectorAll('.ranked-list');
+  for (let i = 0; i < lists.length; i++){
+      let innerLis = lists[i].querySelectorAll('li');
+      for (let ii = 0; ii < innerLis.length; ii++){
+          innerLis[ii].innerHTML = parseInt(innerLis[ii].innerHTML, 10) + n;
+      }
+  }
+}
