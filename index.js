@@ -11,6 +11,5 @@ function deepestChild(){
   while (child.querySelector('div')){
     child = child.querySelector('div')
   }
-  let itemToBeReturned = child.querySelector('div');
-  return itemToBeReturned;
+  return child;
 }
