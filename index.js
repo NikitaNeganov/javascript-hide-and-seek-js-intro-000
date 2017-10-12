@@ -6,10 +6,11 @@ function nestedTarget(){
   let item = document.querySelector('#nested .target');
   return item;
 }
-function increaseRankBy(n){
-  let lists0 = document.querySelectorAll('.ranked-list');
-  //let num = parseInt(n, 10);
-  for (let i = 0; i < lists0.length; i++){
-    lists0[i].innerHTML += num;
+function deepestChild(){
+  let child = document.querySelector('#grand-node')
+  while (child.querySelector('div')){
+    child = child.querySelector('div')
   }
+  let itemToBeReturned = child.querySelector('div');
+  return itemToBeReturned;  
 }
